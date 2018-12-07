@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
 		noecho();
 		keypad(stdscr, TRUE);
 		scrollok(stdscr, TRUE);
-		bs_print = (int (*) (const char *, ...))printw; //compilacion en PCLIT
+		bs_print = (int (*) (const char *, ...))printw;
 		bs_refresh = refresh;
 		for (;;) {
 			bs_print("boxShell> ");
